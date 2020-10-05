@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400&display=swap" rel="stylesheet"> 
+    <title>Masteralb</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <img class="header__logo" src="img/Masteralb.com TOP LOGO.png" alt="Logo">
+    </header>
+    
+    <div class="container">
+    <div class="left">
+        <!-- Register form -->
+        <section class="register">
+            <h2 class="register__heading">Register Form</h2>
+            <form action="" class="form">
+                <div class="form__container">
+                    <label for="register-user">
+                        <div class="form__input">
+                            <div class="form__input--icon"><img src="img/glyphicons_003_user.png" alt="user"></div>
+                            <input type="text" id="register-user" class="form__input--field" required placeholder="Username">
+                        </div>
+                    </label>
+                    <label for="register-password">
+                        <div class="form__input">
+                            <div class="form__input--icon"><img src="img/glyphicons_203_lock copy.png" alt="password"></div>
+                            <input type="password" id="register-password" class="form__input--field" required placeholder="Password">
+                        </div>
+                    </label>
+                    <label for="register-confirm-password">
+                        <div class="form__input">
+                            <div class="form__input--icon"><img src="img/glyphicons_203_lock copy.png" alt="confirm password"></div>
+                            <input type="password" id="register-confirm-password" class="form__input--field" required placeholder="Confirm passowrd">
+                        </div>
+                    </label>
+                    <label for="register-email">
+                        <div class="form__input">
+                            <div class="form__input--icon"><img src="img/glyphicons_010_envelope.png" alt="email"></div>
+                            <input type="email" id="register-email" class="form__input--field" required placeholder="Email">
+                        </div>
+                    </label>
+                    <label for="register-location">
+                        <div class="form__input select">
+                                <div class="form__input--icon"><img src="img/glyphicons_242_google_maps.png" alt="email"></div>
+                                <select name="location" id="register-location" class="form__input--field">
+                                    <option value="" disabled selected>Your Location</option>
+                                    <option value="newyork">New York</option>
+                                    <option value="barcelona">Barcelona</option>
+                                </select>
+                        </div>
+                    </label>
+                    
+                    <div class="form__checkbox">
+                        <input type="checkbox" id="register-terms" name="register-terms" class="form__checkbox--checkmark" checked>
+                        <label for="register-terms">I have read and accept the terms of use</label>
+                    </div>
+    
+                    <button type="submit" class="cta cta--big">Sign up</button>
+                </div>
+            </form>
+        </section>
+        <!-- Send Email form -->
+        <section class="email">
+            <h2 class="email__heading">Send Email</h2>
+            <form action="" class="form" id="email-form">
+                <div class="form__container">
+                    <label for="email-user">
+                        <div class="form__input">
+                            <div class="form__input--icon"><img src="img/glyphicons_003_user.png" alt="user"></div>
+                            <input type="text" id="email-user" class="form__input--field" required placeholder="Username">
+                        </div>
+                    </label>
+                    <label for="email-mail">
+                        <div class="form__input">
+                            <div class="form__input--icon"><img src="img/glyphicons_003_user.png" alt="user"></div>
+                            <input type="email" id="email-mail" class="form__input--field" required placeholder="Your Email">
+                        </div>
+                    </label>
+                    <label for="email-textarea">
+                        <div class="email__textarea form__input--textarea">
+                            <textarea name="email-textarea" form="email-form" class="form__input--text">Type your message...</textarea>
+                        </div>
+                    </label>
+                    <div class="form__checkbox">
+                        <input type="checkbox" id="email-terms" name="email-terms" class="form__checkbox--checkmark" checked>
+                        <label for="email-terms">Send a copy to my Email</label>
+                    </div>
+                    <button type="submit" class="cta cta--big">Send Email</button>
+                </div>
+            </form>
+        </section>
+    </div>
+        <div class="right">
+            <!-- Sign In form -->
+            <section class="signin">
+                <h2 class="signin__heading">Sign In Form</h2>
+                <form action="" class="form">
+                    <div class="form__container">
+                        <label for="signin-user">
+                            <div class="form__input">
+                                <div class="form__input--icon"><img src="img/glyphicons_003_user.png" alt="user"></div>
+                                <input type="text" id="signin-user" class="form__input--field" required placeholder="Username">
+                            </div>
+                        </label>
+                        <label for="signin-password">
+                            <div class="form__input">
+                                <div class="form__input--icon"><img src="img/glyphicons_203_lock copy.png" alt="password"></div>
+                                <input type="password" id="signin-password" class="form__input--field" required placeholder="Password">
+                            </div>
+                        </label>
+                        <div class="signin__terms-container">
+                            <div class="form__checkbox form__checkbox--mg0">
+                                <input type="checkbox" name="signin-terms" id="signin-terms" class="form__checkbox--checkmark" checked>
+                                <label for="signin-terms">Remember me</label>
+                            </div>
+                            <button type="submit" class="cta cta--med">Sign in</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Recover form -->
+            <section class="recover">
+                <h2 class="recover__heading">Recover Form</h2>
+                <form action="" class="form">
+                    <div class="form__container">
+                        <label for="recover-mail">
+                            <div class="form__input">
+                                <div class="form__input--icon"><img src="img/glyphicons_010_envelope.png" alt="mail"></div>
+                                <input type="email" name="recover-mail" id="recover-mail" class="form__input--field" required placeholder="Enter your Email">
+                            </div>
+                        </label>
+                        <label for="recover-phone">
+                            <div class="form__input">
+                                <div class="form__input--icon"><img src="img/glyphicons_139_phone.png" alt="phone number"></div>
+                                <input type="tel" name="recover-mail" id="recover-mail" class="form__input--field" required placeholder="Enter your Phone number">
+                            </div>
+                        </label>
+                        <div class="cta-container">
+                            <button type="submit" class="cta cta--sm">Send</button>
+                            <button type="submit" class="cta cta--sm">Done</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Subscribe form -->
+            <section class="subscribe">
+                <h2>Subscribe Form</h2>
+                <form action="" class="form">
+                    <div class="form__container">
+                        <div class="form__input">
+                            <div class="form__input--icon"><img src="img/glyphicons_010_envelope.png" alt="mail"></div>
+                            <input type="email" name="subscribe-mail" id="subscribe-mail" class="form__input--field" required placeholder="Enter your Email">
+                        </div>
+                        <div class="cta-container">
+                            <button type="submit" class="cta cta--sm">subscribe</button>
+                            <button type="submit" class="cta cta--sm cta--red">thanks</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <footer class="footer">
+                <img src="img/Masteralb.com LOGO.png" alt="logo" class="footer__logo">
+            </footer>
+        </div>
+   </div>
+   <script src="app.js"></script>
+</body>
+</html>
